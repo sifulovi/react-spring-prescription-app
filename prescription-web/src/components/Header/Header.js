@@ -27,7 +27,7 @@ export default function Header() {
 
     async function handleLogout() {
         await UserActions.logout();
-        history.push("/");
+        window.location.href = "/";
     }
 
     return (

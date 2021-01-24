@@ -77,13 +77,10 @@ class Login extends Component {
                 sessionStorage.setItem("token", response.data.token);
                 let message = "Successfully User Login";
                 this.makeAlert('success', message);
-                setTimeout(() => {
-                    this.props.history.push(this.state.targetUrl);
-                    window.location.reload();
-                }, 3000)
+                window.location.href =this.state.targetUrl;
             })
             .catch(err => {
-                let message = "Invalid Crediential";
+                let message = "Invalid Credential";
                 this.makeAlert('error', message);
             })
     };
