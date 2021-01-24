@@ -10,6 +10,7 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
@@ -182,11 +183,9 @@ class DashBoard extends Component {
                         <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
                             Dashboard
                         </Typography>
-                        <IconButton color="inherit">
-                            <Badge onClick={this.logout} color="secondary">
+                        <Button onClick={this.logout} color="inherit">
                                 Logout
-                            </Badge>
-                        </IconButton>
+                        </Button>
                     </Toolbar>
                 </AppBar>
                 <Drawer
